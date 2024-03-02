@@ -13,7 +13,7 @@ function Login() {
   async function login(event) {
     event.preventDefault();
     try {
-      await axios.post("http://localhost:9099/api/v1/employee/login", {
+      await axios.post("https://login-registration-backend-v05t.onrender.com/api/v1/employee/login", {
         email: email,
         password: password,
       }).then((res) => {
@@ -67,7 +67,7 @@ function Login() {
 
               <div>
                 <label>password</label>
-                <input type="password" className='inputBox' id="password" placeholder="Enter Fee"
+                <input type="password" className='inputBox' id="password" placeholder="Enter Password"
 
                   value={password}
                   onChange={(event) => {

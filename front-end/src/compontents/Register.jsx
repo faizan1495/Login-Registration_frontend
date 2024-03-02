@@ -43,7 +43,7 @@ function Register() {
     event.preventDefault();
     if (validateForm()) {
       try {
-        await axios.post("http://localhost:9099/api/v1/employee/save", {
+        await axios.post("https://login-registration-backend-v05t.onrender.com/api/v1/employee/save", {
           employeename: employeename,
           email: email,
           password: password,
