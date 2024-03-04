@@ -1,1 +1,5 @@
-
+#how Run project
+-download the project
+-in terminal Run this command
+## npm install
+## npm start
